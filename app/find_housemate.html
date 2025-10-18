@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RoomEase — Find a Housemate</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+  <div class="logo"><a href="index.html">RoomEase</a></div>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="listings.html">Find Rooms</a> |
+    <a href="find_housemate.html">Find Housemate</a> |
+    <a href="chat.html">Messages</a> |
+    <a href="profile.html">My Profile</a>
+  </nav>
+</header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Find a Housemate</h2>
+      <p>Search and filter students looking for shared housing.</p>
+      <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+        <input class="input" placeholder="Search by name, interest, or keyword" style="flex:1" />
+        <a class="btn" href="preferences.html">Set Preferences</a>
+        <a class="btn secondary" href="matches.html">View Matches</a>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h3>Suggested Housemates</h3>
+      <!-- Insert three roommate cards -->
+      <!-- roommate_card_component.html -->
+<div class="listing card roommate-card">
+  <div style="display:flex;gap:12px;align-items:center">
+    <img src="https://placehold.co/80x80?text=1" alt="avatar" class="avatar" />
+    <div style="flex:1">
+      <strong>Aline Mukasa</strong>
+      <div style="color:#666;font-size:13px">CMU-Africa • Kigali</div>
+      <div style="color:#888;font-size:12px;margin-top:6px">Early riser • Coffee lover</div>
+    </div>
+    <div style="text-align:right">
+      <div class="price">88%</div>
+      <a class="btn" href="profile.html">View</a>
+    </div>
+  </div>
+</div>
+
+      <!-- roommate_card_component.html -->
+<div class="listing card roommate-card">
+  <div style="display:flex;gap:12px;align-items:center">
+    <img src="https://placehold.co/80x80?text=2" alt="avatar" class="avatar" />
+    <div style="flex:1">
+      <strong>Paul Nshimiyimana</strong>
+      <div style="color:#666;font-size:13px">UR • Kicukiro</div>
+      <div style="color:#888;font-size:12px;margin-top:6px">Night owl • Musician</div>
+    </div>
+    <div style="text-align:right">
+      <div class="price">76%</div>
+      <a class="btn" href="profile.html">View</a>
+    </div>
+  </div>
+</div>
+
+      <!-- roommate_card_component.html -->
+<div class="listing card roommate-card">
+  <div style="display:flex;gap:12px;align-items:center">
+    <img src="https://placehold.co/80x80?text=3" alt="avatar" class="avatar" />
+    <div style="flex:1">
+      <strong>Mariam Habimana</strong>
+      <div style="color:#666;font-size:13px">AUCA • Kimihurura</div>
+      <div style="color:#888;font-size:12px;margin-top:6px">Neat & tidy • Likes plants</div>
+    </div>
+    <div style="text-align:right">
+      <div class="price">91%</div>
+      <a class="btn" href="profile.html">View</a>
+    </div>
+  </div>
+</div>
+
+    </section>
+  </main>
+  <footer class="footer card" style="text-align:center;margin-top:28px;padding:12px">
+  <small>© RoomEase — CMU-Africa Hackathon</small>
+</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RoomEase — Chat</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+  <div class="logo"><a href="index.html">RoomEase</a></div>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="listings.html">Find Rooms</a> |
+    <a href="find_housemate.html">Find Housemate</a> |
+    <a href="chat.html">Messages</a> |
+    <a href="profile.html">My Profile</a>
+  </nav>
+</header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Messages</h2>
+      <p>Conversations with hosts and potential housemates.</p>
+    </section>
+
+    <section class="card" style="margin-top:12px">
+      <div class="chat-box card" style="padding:12px">
+        <div class="msg"><strong>Aline</strong><div class="them" style="margin-top:4px">Hi — Is the 2BR near CMU still available?</div></div>
+        <div class="msg" style="text-align:right"><strong>You</strong><div class="me" style="margin-top:4px">Yes — I'm interested. When can I view?</div></div>
+      </div>
+      <div style="margin-top:12px;display:flex;gap:8px">
+        <input class="input" placeholder="Type a message..." style="flex:1" />
+        <button class="btn">Send</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer card" style="text-align:center;margin-top:28px;padding:12px">
+  <small>© RoomEase — CMU-Africa Hackathon</small>
+</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
