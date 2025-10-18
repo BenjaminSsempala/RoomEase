@@ -1,0 +1,54 @@
+:root{
+  --maroon:#A6272F;
+  --cream:#F9F6F1;
+  --muted:#6B6B6B;
+  --card:#ffffff;
+  --radius:10px;
+  --shadow:0 8px 20px rgba(0,0,0,0.08);
+  --max-width:1200px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:#222}
+.container{max-width:var(--max-width);margin:24px auto;padding:18px}
+.admin-header{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;background:transparent;border-bottom:1px solid #eee}
+.admin-header .brand a{color:var(--maroon);font-weight:700;text-decoration:none;font-size:18px}
+.admin-nav{list-style:none;display:flex;gap:12px;margin:0;padding:0}
+.admin-nav a{text-decoration:none;color:#333;padding:8px 10px;border-radius:8px}
+.admin-nav a:hover{background:rgba(0,0,0,0.04)}
+.admin-actions .btn{background:var(--maroon);color:#fff;padding:8px 10px;border-radius:8px;text-decoration:none}
+
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.col-3{grid-column:span 3}
+.col-4{grid-column:span 4}
+.col-6{grid-column:span 6}
+.col-12{grid-column:span 12}
+
+.card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:var(--shadow);}
+.kpi{display:flex;flex-direction:column;gap:6px}
+.kpi .num{font-size:20px;font-weight:700;color:var(--maroon)}
+
+.table{width:100%;border-collapse:collapse}
+.table th, .table td{padding:10px;border-bottom:1px solid #f0f0f0;text-align:left}
+.table th{font-weight:700;color:var(--muted);font-size:13px}
+
+.search{display:flex;gap:8px;margin-bottom:12px}
+
+.btn{display:inline-block;background:var(--maroon);color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
+.btn.ghost{background:transparent;border:1px solid #ddd;color:#333}
+
+.small{font-size:13px;padding:6px 10px}
+
+.admin-footer{padding:18px;text-align:center;color:#777;margin-top:22px;background:transparent}
+
+/* responsive */
+@media (max-width:880px){
+  .grid{grid-template-columns:repeat(6,1fr)}
+  .col-3{grid-column:span 6}
+  .col-4{grid-column:span 6}
+  .col-6{grid-column:span 6}
+}
+@media (max-width:480px){
+  .admin-nav{display:none}
+  .container{padding:12px}
+}

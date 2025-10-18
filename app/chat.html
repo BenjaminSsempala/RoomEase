@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RoomEase — Chat</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .chat-box{height:320px;overflow:auto;padding:12px;border-radius:10px;background:#fff;border:1px solid #f4f4f4}
+    .msg{margin-bottom:10px}
+    .me{background:#fff8f8;padding:10px;border-radius:10px;display:inline-block}
+    .them{background:#f6f6f6;padding:10px;border-radius:10px;display:inline-block}
+    .chat-input{display:flex;gap:8px;margin-top:10px}
+  </style>
+</head>
+<body>
+  <nav class="header">
+  <div class="brand"><a href="index.html">RoomEase</a></div>
+  <ul class="navlinks">
+    <li><a href="listings.html">Find Rooms</a></li>
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="chat.html">Chat</a></li>
+    <li><a href="settings.html">Settings</a></li>
+  </ul>
+</nav>
+
+  <main class="container">
+    <div class="card">
+      <h2>Chat with Host</h2>
+      <div class="chat-box card">
+        <div class="msg"><div class="them">Hi — I’m interested in the 2BR near CMU. Is it still available?</div></div>
+        <div class="msg" style="text-align:right"><div class="me">Yes, it is. Would you like to schedule a viewing?</div></div>
+        <div class="msg"><div class="them">Yes please. When can I see it?</div></div>
+      </div>
+      <div class="chat-input">
+        <input class="input" placeholder="Type a message...">
+        <button class="btn">Send</button>
+      </div>
+      <div style="display:flex;justify-content:space-between;margin-top:14px">
+        <a class="btn secondary" href="listings.html">Back to listings</a>
+        <a class="btn" href="settings.html">Settings</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+  <p>© RoomEase — Built for CMU-Africa Hackathon</p>
+</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

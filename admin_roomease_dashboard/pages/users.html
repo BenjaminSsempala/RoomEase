@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Users</title>
+<link rel="stylesheet" href="../assets/css/style.css"></head>
+<body>
+  <nav class="admin-header">
+  <div class="brand"><a href="dashboard.html">RoomEase Admin</a></div>
+  <ul class="admin-nav">
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="users.html">Users</a></li>
+    <li><a href="listings.html">Listings</a></li>
+    <li><a href="reports.html">Reports</a></li>
+    <li><a href="settings.html">Settings</a></li>
+  </ul>
+  <div class="admin-actions"><a class="btn small" href="index.html">Logout</a></div>
+</nav>
+
+  <main class="container">
+    <div class="card">
+      <h3 style="margin-top:0">Registered Users</h3>
+      <div class="search"><input class="input" placeholder="Search users by name or email"><a class="btn ghost" href="#">Search</a></div>
+      <table class="table">
+        <thead><tr><th>Name</th><th>Email</th><th>University</th><th>Status</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td>Mariam</td><td>mariam@example.com</td><td>CMU-Africa</td><td>Active</td><td><button data-action="delete" class="btn small">Delete</button></td></tr>
+          <tr><td>Paul</td><td>paul@example.com</td><td>UR</td><td>Active</td><td><button data-action="delete" class="btn small">Delete</button></td></tr>
+          <tr><td>Amina</td><td>amina@example.com</td><td>AUCA</td><td>Pending</td><td><button data-action="delete" class="btn small">Delete</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer class="admin-footer">
+  <p>© RoomEase Admin — CMU-Africa Hackathon</p>
+</footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
